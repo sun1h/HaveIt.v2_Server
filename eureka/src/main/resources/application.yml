@@ -7,7 +7,7 @@ spring:
     name: eureka
 
 
-## client ?? 
+## client ??
 eureka:
   client:
     register-with-eureka: false

@@ -1,1 +1,24 @@
+server:
+  port: 8011
 
+spring:
+  application:
+    name: account
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/account?serverTimezone=Asia/Seoul
+    username: root
+    password: ENC(lLAx6LlCltWu0NaACfjY5Q==)
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+jasypt:
+  encryptor:
+    password: ${PASSWORD}
